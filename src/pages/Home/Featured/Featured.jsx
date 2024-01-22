@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 
-const Trending = () => {
+const Featured = () => {
   const [houses, setHouses] = useState([]);
   useEffect(() => {
     fetch("/public/data.json")
@@ -13,7 +13,7 @@ const Trending = () => {
   }, []);
   return (
     <div>
-      <SectionTitle heading={"Trending Property"} />
+      <SectionTitle heading={"Featured Property"} />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-container">
         {houses.map((house) => (
           <div key={house.id} className="card  bg-base-200 shadow-xl">
@@ -31,4 +31,4 @@ const Trending = () => {
   );
 };
 
-export default Trending;
+export default Featured;
