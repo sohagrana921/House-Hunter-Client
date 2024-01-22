@@ -1,3 +1,4 @@
+import CatagoriesNav from "../../components/CatagorisNav/CatagoriesNav";
 import TopNav from "../../components/TopNav/TopNav";
 import {
   HiHome,
@@ -79,6 +80,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <CatagoriesNav />
     </div>
   );
 };
