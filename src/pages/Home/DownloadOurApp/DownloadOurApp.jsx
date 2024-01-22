@@ -1,8 +1,8 @@
 const DownloadOurApp = () => {
   return (
-    <div className="flex items-center my-container justify-between bg-white rounded">
+    <div className="flex items-center my-container justify-between bg-white rounded my-8 py-4">
       <div>
-        <h1 className="text-3xl font-semibold">Download our apps</h1>
+        <h1 className="text-xl md:text-3xl font-semibold">Download our apps</h1>
         <p className="text-lg py-4">
           Our android application is available now. <br /> Download our apps for
           better support. <br /> We are working for ios device. <br /> Please be
