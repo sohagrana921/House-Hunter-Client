@@ -5,7 +5,7 @@ import HouseCard from "../../../../components/HouseCard/HouseCard";
 const Office = () => {
   const [office, setOffice] = useState([]);
   useEffect(() => {
-    fetch("/public/data.json")
+    fetch("data.json")
       .then((res) => res.json())
       .then((data) => {
         setOffice(data);

@@ -5,7 +5,7 @@ import HouseCard from "../../../../components/HouseCard/HouseCard";
 const Sublet = () => {
   const [sublet, setSublet] = useState([]);
   useEffect(() => {
-    fetch("/public/data.json")
+    fetch("data.json")
       .then((res) => res.json())
       .then((data) => {
         setSublet(data);

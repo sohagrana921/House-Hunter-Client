@@ -49,7 +49,7 @@ const CatagoriesNav = () => {
   );
   return (
     <div className="my-4 px-2">
-      <ul className="grid grid-cols-3  md:grid-cols-6 gap-2 md:w-2/3 mx-auto md:text-xl">
+      <ul className="grid grid-cols-3  md:grid-cols-6 gap-2 md:w-4/5 mx-auto md:text-lg">
         {items}
       </ul>
     </div>

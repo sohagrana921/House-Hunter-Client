@@ -5,7 +5,7 @@ import HouseCard from "../../../components/HouseCard/HouseCard";
 const Trending = () => {
   const [trendingHouses, setTrendingHouses] = useState([]);
   useEffect(() => {
-    fetch("/public/data.json")
+    fetch("data.json")
       .then((res) => res.json())
       .then((data) => {
         setTrendingHouses(data);

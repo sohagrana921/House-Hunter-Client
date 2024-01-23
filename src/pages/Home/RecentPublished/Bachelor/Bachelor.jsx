@@ -5,7 +5,7 @@ import HouseCard from "../../../../components/HouseCard/HouseCard";
 const Bachelor = () => {
   const [bachelor, setBachelor] = useState([]);
   useEffect(() => {
-    fetch("/public/data.json")
+    fetch("data.json")
       .then((res) => res.json())
       .then((data) => {
         setBachelor(data);
